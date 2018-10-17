@@ -1,3 +1,9 @@
+
+---
+services: databox
+author: alkohli
+---
+
 # Data Box Edge Csharp modules
 
 This project contains all the Csharp Azure IoT Edge modules that can be deployed on a Data Box Edge device. 
