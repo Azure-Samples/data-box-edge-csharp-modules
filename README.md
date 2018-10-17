@@ -1,6 +1,7 @@
 
 ---
 services: databox
+platforms: dotnet
 author: alkohli
 ---
 
