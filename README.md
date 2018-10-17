@@ -1,57 +1,19 @@
-# Project Name
+# Data Box Edge Csharp modules
 
-(short, 1-3 sentenced, description of the project)
+This project contains all the Csharp Azure IoT Edge modules that can be deployed on a Data Box Edge device. 
 
-## Features
+## Prerequisites
 
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+The following development resources are required to create these sample:
+- [Visual Studio Code](https://code.visualstudio.com/).
+- [C# for Visual Studio Code (powered by OmniSharp) extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
+- [Azure IoT Edge extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge) for Visual Studio Code.
+- [.NET Core 2.1 SDK](https://www.microsoft.com/net/download).
+- [Docker CE](https://store.docker.com/editions/community/docker-ce-desktop-windows). 
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- [Add a custom module on your Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-deploy-configure-compute)
+- [Develop C# IoT Edge module for Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-create-iot-edge-module) 
+- [Azure Data Box Edge documentation](https://docs.microsoft.com/en-us/azure/databox-online/)
+- [Azure IoT Edge module](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module)
