@@ -1,4 +1,3 @@
-
 ---
 services: databox
 platforms: dotnet
@@ -12,6 +11,7 @@ This project contains all the Csharp Azure IoT Edge modules that can be deployed
 ## Prerequisites
 
 The following development resources are required to create these samples:
+
 - [Visual Studio Code](https://code.visualstudio.com/).
 - [C# for Visual Studio Code (powered by OmniSharp) extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
 - [Azure IoT Edge extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge) for Visual Studio Code.
