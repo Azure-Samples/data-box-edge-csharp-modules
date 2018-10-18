@@ -1,0 +1,75 @@
+{
+  "moduleContent": {
+    "$edgeAgent": {
+      "properties.desired": {
+        "schemaVersion": "1.0",
+        "runtime": {
+          "type": "docker",
+          "settings": {
+            "minDockerVersion": "v1.25",
+            "loggingOptions": "",
+            "registryCredentials": {
+              "mycontreg2": {
+                "username": "$CONTAINER_REGISTRY_USERNAME_mycontreg2",
+                "password": "$CONTAINER_REGISTRY_PASSWORD_mycontreg2",
+                "address": "mycontreg2.azurecr.io"
+              }
+            }
+          }
+        },
+        "systemModules": {
+          "edgeAgent": {
+            "type": "docker",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-agent:1.0",
+              "createOptions": ""
+            }
+          },
+          "edgeHub": {
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-hub:1.0",
+              "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"8883/tcp\":[{\"HostPort\":\"8883\"}],\"443/tcp\":[{\"HostPort\":\"443\"}]}}}"
+            }
+          }
+        },
+        "modules": {
+          "tempSensor": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:1.0",
+              "createOptions": ""
+            }
+          },
+          "FileCopyModule": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "${MODULES.FileCopyModule.amd64}",
+              "createOptions": ""
+            }
+          }
+        }
+      }
+    },
+    "$edgeHub": {
+      "properties.desired": {
+        "schemaVersion": "1.0",
+        "routes": {
+          "sensorToFileCopyModule": "FROM /messages/modules/tempSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/FileCopyModule/inputs/input1\")",
+          "FileCopyModuleToIoTHub": "FROM /messages/modules/FileCopyModule/outputs/output1 INTO $upstream"
+        },
+        "storeAndForwardConfiguration": {
+          "timeToLiveSecs": 7200
+        }
+      }
+    }
+  }
+}
