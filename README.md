@@ -1,7 +1,10 @@
 ---
-services: databox
-platforms: dotnet
-author: alkohli
+page_type: sample
+languages:
+  - csharp
+products:
+  - azure
+  - databox
 ---
 
 # Data Box Edge Csharp modules
