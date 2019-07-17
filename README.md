@@ -1,10 +1,11 @@
 ---
 page_type: sample
 languages:
-  - csharp
+- csharp
 products:
-  - azure
-  - databox
+- azure
+- azure-iot-edge
+description: "This project contains all the C# Azure IoT Edge modules that can be deployed on a Data Box Edge device."
 ---
 
 # Data Box Edge Csharp modules
