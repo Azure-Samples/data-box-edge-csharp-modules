@@ -17,7 +17,7 @@ This project contains all the Csharp Azure IoT Edge modules that can be deployed
 The following development resources are required to create these samples:
 
 - [Visual Studio Code](https://code.visualstudio.com/).
-- [C# for Visual Studio Code (powered by OmniSharp) extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
+- [C# for Visual Studio Code (powered by OmniSharp) extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 - [Azure IoT Edge extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-edge) for Visual Studio Code.
 - [.NET Core 2.1 SDK](https://www.microsoft.com/net/download).
 - [Docker CE](https://store.docker.com/editions/community/docker-ce-desktop-windows). 
