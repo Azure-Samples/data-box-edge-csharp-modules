@@ -8,9 +8,9 @@ products:
 description: "This project contains all the C# Azure IoT Edge modules that can be deployed on a Data Box Edge device."
 ---
 
-# Data Box Edge Csharp modules
+# Azure Stack Edge Csharp modules
 
-This project contains all the Csharp Azure IoT Edge modules that can be deployed on a Data Box Edge device. 
+This project contains all the Csharp Azure IoT Edge modules that can be deployed on an Azure Stack Edge device. 
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ The following development resources are required to create these samples:
 
 ## Resources
 
-- [Add a custom module on your Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-deploy-configure-compute)
-- [Develop C# IoT Edge module for Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-create-iot-edge-module) 
-- [Azure Data Box Edge documentation](https://docs.microsoft.com/en-us/azure/databox-online/)
+- [Add a custom module on your Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-deploy-configure-compute)
+- [Develop C# IoT Edge module for Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-create-iot-edge-module) 
+- [Azure Stack Edge documentation](https://docs.microsoft.com/en-us/azure/databox-online/)
 - [Azure IoT Edge module](https://docs.microsoft.com/azure/iot-edge/tutorial-csharp-module)
