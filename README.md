@@ -5,7 +5,7 @@ languages:
 products:
 - azure
 - azure-iot-edge
-description: "This project contains all the C# Azure IoT Edge modules that can be deployed on a Data Box Edge device."
+description: "This project contains all the C# Azure IoT Edge modules that can be deployed on an Azure Stack Edge device."
 ---
 
 # Azure Stack Edge Csharp modules
