@@ -8,9 +8,9 @@ products:
 description: "This project contains all the C# Azure IoT Edge modules that can be deployed on an Azure Stack Edge device."
 ---
 
-# Azure Stack Edge Csharp modules
+# Data Box Edge Csharp modules
 
-This project contains all the Csharp Azure IoT Edge modules that can be deployed on an Azure Stack Edge device. 
+This project contains all the Csharp Azure IoT Edge modules that can be deployed on an Azure Stack Edge device. Data Box Edge was rebranded as Azure Stack Edge.
 
 ## Prerequisites
 
